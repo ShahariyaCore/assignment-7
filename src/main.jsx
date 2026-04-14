@@ -1,12 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { RouterProvider } from "react-router-dom"
-import { createBrowserRouter } from "react-router-dom"
-import './index.css'
-import RootLayout from './layout/RootLayout'
-import HomePage from './pages/HomePage'
-import { About } from './pages/About'
-import { Contact } from './pages/Contact'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
+import "./index.css";
+import RootLayout from "./layout/RootLayout";
+import HomePage from "./pages/HomePage";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+
+// ✅ Import toastify styles and container
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -24,13 +28,15 @@ const router = createBrowserRouter([
       {
         path: "/Contact",
         element: <Contact />,
-      }
+      },
     ],
   },
-])
+]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+    {/* ✅ Add ToastContainer once at the root */}
+    <ToastContainer position="top-right" autoClose={3000} />
+  </StrictMode>
+);
