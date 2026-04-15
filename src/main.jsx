@@ -7,7 +7,7 @@ import RootLayout from "./layout/RootLayout";
 import HomePage from "./pages/HomePage";
 import FriendDetails from "./components/FriendDetails"; // ✅ import new details page
 import Timeline from "./pages/Timeline"; // ✅ import Timeline component
-
+import Stats from "./pages/Stats"; // ✅ import Stats component
 
 // ✅ Import toastify styles and container
 import "react-toastify/dist/ReactToastify.css";
@@ -23,10 +23,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/friends/:id", // ✅ new route for friend details
+        path: "/friends/:id", // dynamic route for friend details
         element: <FriendDetails />,
       },
-      { path: "/timeline", element: <Timeline /> }, // ✅ new route
+      { path: "/timeline", element: <Timeline /> }, 
+      { path: "/stats", element: <Stats /> },
       
     ],
   },
