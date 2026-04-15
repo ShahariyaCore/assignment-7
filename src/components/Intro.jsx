@@ -1,7 +1,7 @@
 import React from "react";
 const Intro = () => {
   return (
-    <div className="my-20 text-center">
+    <div className="mt-5 mb-10 text-center">
       <h2 className="text-2xl font-bold text-gray-900">
         Friends to keep close in your life
       </h2>

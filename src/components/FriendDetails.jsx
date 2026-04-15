@@ -1,5 +1,5 @@
-import { useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import {
   FaBell,
   FaFolder,
@@ -12,12 +12,15 @@ import { toast } from "react-toastify";
 
 const FriendDetails = () => {
   const { state } = useLocation();
+  const { id } = useParams();
   const navigate = useNavigate();
+
   const [friends, setFriends] = useState(() => {
     return JSON.parse(localStorage.getItem("friends")) || [];
   });
 
-  const friend = state?.friend;
+  // If state was passed, use that; otherwise find friend by id
+  const friend = state?.friend || friends.find((f) => String(f.id) === id);
 
   if (!friend) {
     return <p className="p-6">No friend selected.</p>;
@@ -39,6 +42,7 @@ const FriendDetails = () => {
     const newEntry = {
       type,
       friend: friend.name,
+      friendId: friend.id,
       date: new Date().toLocaleDateString(),
     };
 
@@ -46,9 +50,7 @@ const FriendDetails = () => {
     saved.unshift(newEntry);
     localStorage.setItem("timeline", JSON.stringify(saved));
 
-    // Show toast notification
     toast.success(`${type.toUpperCase()} with ${friend.name} logged!`);
-
     navigate("/timeline");
   };
 
