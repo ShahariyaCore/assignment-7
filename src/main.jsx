@@ -5,8 +5,9 @@ import { createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import RootLayout from "./layout/RootLayout";
 import HomePage from "./pages/HomePage";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
+import FriendDetails from "./components/FriendDetails"; // ✅ import new details page
+import Timeline from "./pages/Timeline"; // ✅ import Timeline component
+import Stats from "./pages/Stats"; // ✅ import Stats component
 
 // ✅ Import toastify styles and container
 import "react-toastify/dist/ReactToastify.css";
@@ -22,13 +23,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/About",
-        element: <About />,
+        path: "/friends/:id", // ✅ new route for friend details
+        element: <FriendDetails />,
       },
-      {
-        path: "/Contact",
-        element: <Contact />,
-      },
+      { path: "/timeline", element: <Timeline /> }, // ✅ new route
+      { path: "/stats", element: <Stats /> }, // ✅ new route
     ],
   },
 ]);
@@ -36,7 +35,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-    {/* ✅ Add ToastContainer once at the root */}
+    {/* ✅ ToastContainer at root */}
     <ToastContainer position="top-right" autoClose={3000} />
   </StrictMode>
 );

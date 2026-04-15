@@ -1,36 +1,18 @@
-import { useState } from "react";
-import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
-const FriendCard = ({ friend, onUpdateStatus }) => {
-  const [isContacted, setIsContacted] = useState(false);
+const FriendCard = ({ friend }) => {
+  const navigate = useNavigate();
 
-  const handleContact = () => {
-    if (isContacted) return;
-    setIsContacted(true);
-    toast.success(`You contacted ${friend.name}!`);
-    onUpdateStatus(friend.id);
+  const handleViewDetails = () => {
+    navigate(`/friends/${friend.id}`, { state: { friend } });
   };
-
-  const getStatusConfig = (status) => {
-    switch (status?.toLowerCase()) {
-      case "overdue":
-        return { text: "Overdue", color: "bg-red-500 text-white" };
-      case "almost_due":
-      case "almost due":
-        return { text: "Almost Due", color: "bg-amber-400 text-white" };
-      case "on-track":
-      case "on_track":
-        return { text: "On-Track", color: "bg-emerald-600 text-white" };
-      default:
-        return { text: status || "", color: "bg-gray-400 text-white" };
-    }
-  };
-
-  const statusConfig = getStatusConfig(friend.status);
 
   return (
-    <div className="bg-white rounded-3xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col">
-      {/* Profile Picture - Centered */}
+    <div
+      onClick={handleViewDetails}
+      className="cursor-pointer bg-white rounded-3xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
+    >
+      {/* Profile Picture */}
       <div className="flex justify-center mb-5">
         <img
           src={friend.picture}
@@ -62,26 +44,19 @@ const FriendCard = ({ friend, onUpdateStatus }) => {
       </div>
 
       {/* Status */}
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center">
         <span
-          className={`px-6 py-1.5 text-sm font-semibold rounded-full tracking-wider ${statusConfig.color}`}
+          className={`px-6 py-1.5 text-sm font-semibold rounded-full tracking-wider ${
+            friend.status === "overdue"
+              ? "bg-red-500 text-white"
+              : friend.status === "almost due"
+              ? "bg-amber-400 text-white"
+              : "bg-emerald-600 text-white"
+          }`}
         >
-          {statusConfig.text}
+          {friend.status}
         </span>
       </div>
-
-      {/* Button */}
-      <button
-        onClick={handleContact}
-        disabled={isContacted}
-        className="mt-auto w-full py-3.5 rounded-2xl text-white font-semibold text-base
-                   bg-gradient-to-r from-purple-600 to-pink-500 
-                   hover:from-purple-700 hover:to-pink-600 
-                   disabled:opacity-60 disabled:cursor-not-allowed 
-                   transition-all active:scale-95 shadow-sm"
-      >
-        {isContacted ? "✓ Contacted" : "Mark as Contacted"}
-      </button>
     </div>
   );
 };
