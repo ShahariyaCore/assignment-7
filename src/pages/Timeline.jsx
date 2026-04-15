@@ -38,17 +38,6 @@ const Timeline = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      {/* Back Button */}
-      <motion.button
-  whileHover={{ scale: 1.05, backgroundColor: "#065f46", color: "#fff" }}
-  whileTap={{ scale: 0.95 }}
-  onClick={() => navigate("/")}   // ✅ Always go to Home
-  className="flex items-center gap-2 px-4 py-2 mb-6 rounded-lg bg-green-700 text-white shadow hover:bg-green-800 transition"
->
-  <FaArrowLeft /> Back to Home
-</motion.button>
-
-
       <h2 className="text-2xl font-bold mb-4">Timeline</h2>
 
       {/* Filter Dropdown */}

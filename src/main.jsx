@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import FriendDetails from "./components/FriendDetails"; // ✅ import new details page
 import Timeline from "./pages/Timeline"; // ✅ import Timeline component
 import Stats from "./pages/Stats"; // ✅ import Stats component
+import NotFound from "./components/NotFound"; // ✅ import 404 page
 
 // ✅ Import toastify styles and container
 import "react-toastify/dist/ReactToastify.css";
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
         element: <FriendDetails />,
       },
       { path: "/timeline", element: <Timeline /> }, 
-      { path: "/stats", element: <Stats /> },
+      { path: "/stats", element: <Stats /> }, // ✅ dynamic route for friend details
+      { path: "*", element: <NotFound /> },
       
     ],
   },
