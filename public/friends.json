@@ -2,16 +2,11 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photos/john_doe.jpg",
+    "picture": "/src/assets/image/men/John Doe.jpg",
     "email": "john.doe@example.com",
     "days_since_contact": 48,
     "status": "overdue",
-    "tags": [
-      "college",
-      "volunteer",
-      "creative",
-      "tech"
-    ],
+    "tags": ["college", "volunteer", "creative", "tech"],
     "bio": "Met during a summer internship. We bonded over our love for jazz music.",
     "goal": 7,
     "next_due_date": "2026-03-03"
@@ -19,16 +14,11 @@
   {
     "id": 2,
     "name": "Emily Carter",
-    "picture": "https://example.com/photos/emily_carter.jpg",
+    "picture": "/src/assets/image/women/Emily Carter.jpg",
     "email": "emily.carter@example.com",
     "days_since_contact": 5,
     "status": "almost due",
-    "tags": [
-      "volunteer",
-      "book club",
-      "travel",
-      "college"
-    ],
+    "tags": ["volunteer", "book club", "travel", "college"],
     "bio": "Childhood friend from the neighborhood. We used to ride bikes together.",
     "goal": 7,
     "next_due_date": "2026-04-15"
@@ -36,15 +26,11 @@
   {
     "id": 3,
     "name": "Michael Nguyen",
-    "picture": "https://example.com/photos/michael_nguyen.jpg",
+    "picture": "/src/assets/image/men/Michael Nguyen.jpg",
     "email": "michael.nguyen@example.com",
     "days_since_contact": 55,
     "status": "overdue",
-    "tags": [
-      "book club",
-      "cooking",
-      "childhood"
-    ],
+    "tags": ["book club", "cooking", "childhood"],
     "bio": "Colleague from my first job. Always up for a coffee chat.",
     "goal": 21,
     "next_due_date": "2026-03-10"
@@ -52,16 +38,11 @@
   {
     "id": 4,
     "name": "Sophia Patel",
-    "picture": "https://example.com/photos/sophia_patel.jpg",
+    "picture": "/src/assets/image/women/Sophia Patel.jpg",
     "email": "sophia.patel@example.com",
     "days_since_contact": 35,
     "status": "overdue",
-    "tags": [
-      "neighbor",
-      "gym",
-      "tech",
-      "creative"
-    ],
+    "tags": ["neighbor", "gym", "tech", "creative"],
     "bio": "We met at a photography workshop and have been friends since.",
     "goal": 7,
     "next_due_date": "2026-03-16"
@@ -69,15 +50,11 @@
   {
     "id": 5,
     "name": "David Kim",
-    "picture": "https://example.com/photos/david_kim.jpg",
+    "picture": "/src/assets/image/men/David Kim.jpg",
     "email": "david.kim@example.com",
     "days_since_contact": 22,
     "status": "overdue",
-    "tags": [
-      "childhood",
-      "fitness",
-      "college"
-    ],
+    "tags": ["childhood", "fitness", "college"],
     "bio": "Travel buddy from my Europe trip. We explored 5 countries together.",
     "goal": 21,
     "next_due_date": "2026-04-12"
@@ -85,16 +62,11 @@
   {
     "id": 6,
     "name": "Ava Thompson",
-    "picture": "https://example.com/photos/ava_thompson.jpg",
+    "picture": "/src/assets/image/women/Ava Thompson.jpg",
     "email": "ava.thompson@example.com",
     "days_since_contact": 6,
     "status": "on-track",
-    "tags": [
-      "childhood",
-      "creative",
-      "volunteer",
-      "college"
-    ],
+    "tags": ["childhood", "creative", "volunteer", "college"],
     "bio": "Volunteered together at the animal shelter. Shares my love for dogs.",
     "goal": 21,
     "next_due_date": "2026-04-28"
@@ -102,15 +74,11 @@
   {
     "id": 7,
     "name": "Liam Johnson",
-    "picture": "https://example.com/photos/liam_johnson.jpg",
+    "picture": "/src/assets/image/men/Liam Johnson.jpg",
     "email": "liam.johnson@example.com",
     "days_since_contact": 36,
     "status": "overdue",
-    "tags": [
-      "childhood",
-      "gym",
-      "volunteer"
-    ],
+    "tags": ["childhood", "gym", "volunteer"],
     "bio": "Roommate from college. We still catch up every few months.",
     "goal": 14,
     "next_due_date": "2026-03-22"
@@ -118,16 +86,11 @@
   {
     "id": 8,
     "name": "Olivia Brown",
-    "picture": "https://example.com/photos/olivia_brown.jpg",
+    "picture": "/src/assets/image/women/Olivia Brown.jpg",
     "email": "olivia.brown@example.com",
     "days_since_contact": 45,
     "status": "overdue",
-    "tags": [
-      "fitness",
-      "cooking",
-      "neighbor",
-      "gym"
-    ],
+    "tags": ["fitness", "cooking", "neighbor", "gym"],
     "bio": "Met at a book club. We both love historical fiction.",
     "goal": 21,
     "next_due_date": "2026-03-20"
@@ -135,15 +98,11 @@
   {
     "id": 9,
     "name": "Noah Davis",
-    "picture": "https://example.com/photos/noah_davis.jpg",
+    "picture": "/src/assets/image/men/Noah Davis.jpg",
     "email": "noah.davis@example.com",
     "days_since_contact": 32,
     "status": "overdue",
-    "tags": [
-      "work",
-      "gym",
-      "language exchange"
-    ],
+    "tags": ["work", "gym", "language exchange"],
     "bio": "Friend from yoga class. We often go hiking on weekends.",
     "goal": 21,
     "next_due_date": "2026-04-02"
@@ -151,14 +110,11 @@
   {
     "id": 10,
     "name": "Isabella Wilson",
-    "picture": "https://example.com/photos/isabella_wilson.jpg",
+    "picture": "/src/assets/image/women/Isabella Wilson.jpg",
     "email": "isabella.wilson@example.com",
     "days_since_contact": 42,
     "status": "overdue",
-    "tags": [
-      "neighbor",
-      "volunteer"
-    ],
+    "tags": ["neighbor", "volunteer"],
     "bio": "Neighbor and gardening enthusiast. We exchange plant tips.",
     "goal": 7,
     "next_due_date": "2026-03-09"
@@ -166,16 +122,11 @@
   {
     "id": 11,
     "name": "Ethan Martinez",
-    "picture": "https://example.com/photos/ethan_martinez.jpg",
+    "picture": "/src/assets/image/men/Ethan Martinez.jpg",
     "email": "ethan.martinez@example.com",
     "days_since_contact": 10,
     "status": "on-track",
-    "tags": [
-      "travel",
-      "cooking",
-      "neighbor",
-      "close friend"
-    ],
+    "tags": ["travel", "cooking", "neighbor", "close friend"],
     "bio": "We met at a tech conference. Great at coding and board games.",
     "goal": 30,
     "next_due_date": "2026-05-03"
@@ -183,15 +134,11 @@
   {
     "id": 12,
     "name": "Mia Anderson",
-    "picture": "https://example.com/photos/mia_anderson.jpg",
+    "picture": "/src/assets/image/women/Mia Anderson.jpg",
     "email": "mia.anderson@example.com",
     "days_since_contact": 43,
     "status": "overdue",
-    "tags": [
-      "volunteer",
-      "college",
-      "tech"
-    ],
+    "tags": ["volunteer", "college", "tech"],
     "bio": "Old high school friend. We reconnect every holiday season.",
     "goal": 14,
     "next_due_date": "2026-03-15"
@@ -199,16 +146,11 @@
   {
     "id": 13,
     "name": "Lucas Lee",
-    "picture": "https://example.com/photos/lucas_lee.jpg",
+    "picture": "/src/assets/image/men/Lucas Lee.jpg",
     "email": "lucas.lee@example.com",
     "days_since_contact": 34,
     "status": "overdue",
-    "tags": [
-      "volunteer",
-      "work",
-      "fitness",
-      "gym"
-    ],
+    "tags": ["volunteer", "work", "fitness", "gym"],
     "bio": "Met at a cooking class. We experiment with new recipes together.",
     "goal": 30,
     "next_due_date": "2026-04-09"
@@ -216,15 +158,11 @@
   {
     "id": 14,
     "name": "Charlotte Moore",
-    "picture": "https://example.com/photos/charlotte_moore.jpg",
+    "picture": "/src/assets/image/women/Charlotte Moore.jpg",
     "email": "charlotte.moore@example.com",
     "days_since_contact": 44,
     "status": "overdue",
-    "tags": [
-      "creative",
-      "work",
-      "gym"
-    ],
+    "tags": ["creative", "work", "gym"],
     "bio": "Friend from the gym. We motivate each other to stay fit.",
     "goal": 30,
     "next_due_date": "2026-03-30"
@@ -232,15 +170,11 @@
   {
     "id": 15,
     "name": "Mason Taylor",
-    "picture": "https://example.com/photos/mason_taylor.jpg",
+    "picture": "/src/assets/image/men/Mason Taylor.jpg",
     "email": "mason.taylor@example.com",
     "days_since_contact": 59,
     "status": "overdue",
-    "tags": [
-      "tech",
-      "creative",
-      "childhood"
-    ],
+    "tags": ["tech", "creative", "childhood"],
     "bio": "We met at a language exchange meetup. Loves learning new cultures.",
     "goal": 14,
     "next_due_date": "2026-02-27"
@@ -248,14 +182,11 @@
   {
     "id": 16,
     "name": "Amelia Thomas",
-    "picture": "https://example.com/photos/amelia_thomas.jpg",
+    "picture": "/src/assets/image/women/Amelia Thomas.jpg",
     "email": "amelia.thomas@example.com",
     "days_since_contact": 22,
     "status": "on-track",
-    "tags": [
-      "gym",
-      "cooking"
-    ],
+    "tags": ["gym", "cooking"],
     "bio": "College lab partner. We worked on several projects together.",
     "goal": 30,
     "next_due_date": "2026-04-21"
@@ -263,15 +194,11 @@
   {
     "id": 17,
     "name": "Logan White",
-    "picture": "https://example.com/photos/logan_white.jpg",
+    "picture": "/src/assets/image/men/Logan White.jpg",
     "email": "logan.white@example.com",
     "days_since_contact": 17,
     "status": "on-track",
-    "tags": [
-      "fitness",
-      "college",
-      "language exchange"
-    ],
+    "tags": ["fitness", "college", "language exchange"],
     "bio": "Friend from art school. We collaborate on creative projects.",
     "goal": 21,
     "next_due_date": "2026-04-17"
@@ -279,16 +206,11 @@
   {
     "id": 18,
     "name": "Harper Harris",
-    "picture": "https://example.com/photos/harper_harris.jpg",
+    "picture": "/src/assets/image/women/Harper Harris.jpg",
     "email": "harper.harris@example.com",
     "days_since_contact": 47,
     "status": "overdue",
-    "tags": [
-      "book club",
-      "close friend",
-      "creative",
-      "neighbor"
-    ],
+    "tags": ["book club", "close friend", "creative", "neighbor"],
     "bio": "Met at a local charity event. Passionate about community service.",
     "goal": 30,
     "next_due_date": "2026-03-27"
@@ -296,15 +218,11 @@
   {
     "id": 19,
     "name": "Elijah Martin",
-    "picture": "https://example.com/photos/elijah_martin.jpg",
+    "picture": "/src/assets/image/men/Elijah Martin.jpg",
     "email": "elijah.martin@example.com",
     "days_since_contact": 53,
     "status": "overdue",
-    "tags": [
-      "cooking",
-      "childhood",
-      "fitness"
-    ],
+    "tags": ["cooking", "childhood", "fitness"],
     "bio": "We met through mutual friends at a wedding. Great sense of humor.",
     "goal": 7,
     "next_due_date": "2026-02-26"
@@ -312,14 +230,11 @@
   {
     "id": 20,
     "name": "Abigail Clark",
-    "picture": "https://example.com/photos/abigail_clark.jpg",
+    "picture": "/src/assets/image/women/Abigail Clark.jpg",
     "email": "abigail.clark@example.com",
     "days_since_contact": 29,
     "status": "almost due",
-    "tags": [
-      "neighbor",
-      "tech"
-    ],
+    "tags": ["neighbor", "tech"],
     "bio": "Friend from dance class. We perform in local shows together.",
     "goal": 30,
     "next_due_date": "2026-04-14"
