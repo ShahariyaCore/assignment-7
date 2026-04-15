@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FriendCard from "./FriendCard";
-import friendsData from "../assets/friends.json";
 
 const FriendsDashboard = () => {
-  const [friends] = useState(friendsData);
+  const [friends, setFriends] = useState([]);
+
+  // ✅ Load friends.json from public folder
+  useEffect(() => {
+    fetch("/friends.json")
+      .then((res) => res.json())
+      .then((data) => setFriends(data))
+      .catch((err) => console.error("Error loading friends.json:", err));
+  }, []);
 
   // Summary stats
   const totalFriends = friends.length;
@@ -13,7 +20,7 @@ const FriendsDashboard = () => {
   ).length;
 
   return (
-    <div className="p-6">
+    <div className="p-6 container mx-auto">
       {/* Summary Boxes */}
       <div className="grid grid-cols-4 gap-4 mb-8">
         <div className="bg-white p-4 rounded-lg shadow text-center">
