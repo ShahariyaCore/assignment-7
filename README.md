@@ -49,7 +49,7 @@ public/
 ## 🛠️ Getting Started
 
 1. **Clone the repository**
-   git clone https://github.com/your-username/friendship-tracker.git
+   git clone https:[//github.com/your-username/friendship-tracker.git](https://github.com/ShahariyaCore/assignment-7.git)
    
 2. **Install dependencies**
    npm install
