@@ -5,7 +5,6 @@ import {
   FaVideo,
   FaHandshake,
   FaTrash,
-  FaArrowLeft,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -96,6 +95,16 @@ const Timeline = () => {
             </motion.div>
           ))}
         </AnimatePresence>
+      </div>
+
+      {/* Default button to show 404 */}
+      <div className="mt-8 text-center">
+        <button
+          onClick={() => navigate("/not-found")}
+          className="px-6 py-2 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"
+        >
+          Click to 404 Page
+        </button>
       </div>
     </div>
   );
