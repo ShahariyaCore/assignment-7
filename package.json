@@ -2,8 +2,7 @@
   "name": "assignment-7",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "homepage": "https://shahariyacore.github.io/assignment-7/", 
+  "type": "module", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",

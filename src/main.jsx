@@ -27,10 +27,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  {
-   basename: import.meta.env.MODE === "production" ? "/assignment-7" : "/", 
-    // ✅ use repo name only in production
-  }
+
 );
 
 createRoot(document.getElementById("root")).render(

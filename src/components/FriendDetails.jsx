@@ -1,5 +1,5 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   FaBell,
   FaFolder,
@@ -37,7 +37,7 @@ const FriendDetails = () => {
     navigate("/");
   };
 
-  // ✅ Log interaction, show toast, and redirect to timeline
+  // ✅ Log interaction and show toast (no auto redirect)
   const handleInteraction = (type) => {
     const newEntry = {
       type,
@@ -51,7 +51,7 @@ const FriendDetails = () => {
     localStorage.setItem("timeline", JSON.stringify(saved));
 
     toast.success(`${type.toUpperCase()} with ${friend.name} logged!`);
-    navigate("/timeline");
+    // ❌ Removed navigate("/timeline")
   };
 
   return (
@@ -158,6 +158,16 @@ const FriendDetails = () => {
                 <FaVideo /> Video
               </button>
             </div>
+          </div>
+
+          {/* Optional navigation */}
+          <div className="bg-white p-6 rounded-2xl shadow text-center">
+            <button
+              onClick={() => navigate("/timeline")}
+              className="px-6 py-2 bg-blue-100 rounded-lg hover:bg-blue-200"
+            >
+              View Timeline
+            </button>
           </div>
         </div>
       </div>
