@@ -5,6 +5,7 @@ import {
   FaVideo,
   FaHandshake,
   FaTrash,
+  FaInbox,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -59,49 +60,63 @@ const Timeline = () => {
 
       {/* Timeline List */}
       <div className="space-y-4">
-        <AnimatePresence>
-          {filtered.map((item, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              whileHover={variants[item.type]}
-              className="flex items-center gap-3 bg-white p-4 rounded-lg shadow transition"
-            >
-              {item.type === "call" && <FaPhone className="text-green-600" />}
-              {item.type === "text" && (
-                <FaCommentDots className="text-blue-600" />
-              )}
-              {item.type === "video" && <FaVideo className="text-purple-600" />}
-              {item.type === "meetup" && (
-                <FaHandshake className="text-orange-600" />
-              )}
-
-              <div className="flex-1">
-                <p className="font-medium capitalize">
-                  {item.type} with {item.friend}
-                </p>
-                <p className="text-sm text-gray-500">{item.date}</p>
-              </div>
-
-              {/* Delete Button */}
-              <button
-                onClick={() => handleDelete(idx)}
-                className="p-2 rounded-full hover:bg-red-100 transition"
+        {filtered.length === 0 ? (
+          <div className="bg-white border rounded-xl shadow-md p-8 text-center">
+            <FaInbox className="text-gray-400 text-4xl mx-auto mb-3" />
+            <p className="text-gray-600 font-medium">
+              Nothing is selected yet
+            </p>
+            <p className="text-sm text-gray-400 mt-1">
+              Your interactions will appear here once logged.
+            </p>
+          </div>
+        ) : (
+          <AnimatePresence>
+            {filtered.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                whileHover={variants[item.type]}
+                className="flex items-center gap-3 bg-white p-4 rounded-lg shadow transition"
               >
-                <FaTrash className="text-red-500" />
-              </button>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+                {item.type === "call" && <FaPhone className="text-green-600" />}
+                {item.type === "text" && (
+                  <FaCommentDots className="text-blue-600" />
+                )}
+                {item.type === "video" && (
+                  <FaVideo className="text-purple-600" />
+                )}
+                {item.type === "meetup" && (
+                  <FaHandshake className="text-orange-600" />
+                )}
+
+                <div className="flex-1">
+                  <p className="font-medium capitalize">
+                    {item.type} with {item.friend}
+                  </p>
+                  <p className="text-sm text-gray-500">{item.date}</p>
+                </div>
+
+                {/* Delete Button */}
+                <button
+                  onClick={() => handleDelete(idx)}
+                  className="p-2 rounded-full hover:bg-red-100 transition"
+                >
+                  <FaTrash className="text-red-500" />
+                </button>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        )}
       </div>
 
       {/* Default button to show 404 */}
       <div className="mt-8 text-center">
         <button
           onClick={() => navigate("/not-found")}
-          className="px-6 py-2 bg-red-100 text-red-600 rounded-lg hover:bg-red-200"
+          className="px-6 py-2 bg-red-100 text-red-600 rounded-lg shadow hover:bg-red-200"
         >
           Click to 404 Page
         </button>

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "/src/assets/image/men/John Doe.jpg",
+    "picture": "/assets/image/men/John Doe.jpg",
     "email": "john.doe@example.com",
     "days_since_contact": 48,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Emily Carter",
-    "picture": "/src/assets/image/women/Emily Carter.jpg",
+    "picture": "/assets/image/women/Emily Carter.jpg",
     "email": "emily.carter@example.com",
     "days_since_contact": 5,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Nguyen",
-    "picture": "/src/assets/image/men/Michael Nguyen.jpg",
+    "picture": "/assets/image/men/Michael Nguyen.jpg",
     "email": "michael.nguyen@example.com",
     "days_since_contact": 55,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sophia Patel",
-    "picture": "/src/assets/image/women/Sophia Patel.jpg",
+    "picture": "/assets/image/women/Sophia Patel.jpg",
     "email": "sophia.patel@example.com",
     "days_since_contact": 35,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "David Kim",
-    "picture": "/src/assets/image/men/David Kim.jpg",
+    "picture": "/assets/image/men/David Kim.jpg",
     "email": "david.kim@example.com",
     "days_since_contact": 22,
     "status": "overdue",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Ava Thompson",
-    "picture": "/src/assets/image/women/Ava Thompson.jpg",
+    "picture": "/assets/image/women/Ava Thompson.jpg",
     "email": "ava.thompson@example.com",
     "days_since_contact": 6,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Liam Johnson",
-    "picture": "/src/assets/image/men/Liam Johnson.jpg",
+    "picture": "/assets/image/men/Liam Johnson.jpg",
     "email": "liam.johnson@example.com",
     "days_since_contact": 36,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Olivia Brown",
-    "picture": "/src/assets/image/women/Olivia Brown.jpg",
+    "picture": "/assets/image/women/Olivia Brown.jpg",
     "email": "olivia.brown@example.com",
     "days_since_contact": 45,
     "status": "overdue",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Noah Davis",
-    "picture": "/src/assets/image/men/Noah Davis.jpg",
+    "picture": "/assets/image/men/Noah Davis.jpg",
     "email": "noah.davis@example.com",
     "days_since_contact": 32,
     "status": "overdue",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Isabella Wilson",
-    "picture": "/src/assets/image/women/Isabella Wilson.jpg",
+    "picture": "/assets/image/women/Isabella Wilson.jpg",
     "email": "isabella.wilson@example.com",
     "days_since_contact": 42,
     "status": "overdue",
@@ -122,7 +122,7 @@
   {
     "id": 11,
     "name": "Ethan Martinez",
-    "picture": "/src/assets/image/men/Ethan Martinez.jpg",
+    "picture": "/assets/image/men/Ethan Martinez.jpg",
     "email": "ethan.martinez@example.com",
     "days_since_contact": 10,
     "status": "on-track",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Mia Anderson",
-    "picture": "/src/assets/image/women/Mia Anderson.jpg",
+    "picture": "/assets/image/women/Mia Anderson.jpg",
     "email": "mia.anderson@example.com",
     "days_since_contact": 43,
     "status": "overdue",
@@ -146,7 +146,7 @@
   {
     "id": 13,
     "name": "Lucas Lee",
-    "picture": "/src/assets/image/men/Lucas Lee.jpg",
+    "picture": "/assets/image/men/Lucas Lee.jpg",
     "email": "lucas.lee@example.com",
     "days_since_contact": 34,
     "status": "overdue",
@@ -158,7 +158,7 @@
   {
     "id": 14,
     "name": "Charlotte Moore",
-    "picture": "/src/assets/image/women/Charlotte Moore.jpg",
+    "picture": "/assets/image/women/Charlotte Moore.jpg",
     "email": "charlotte.moore@example.com",
     "days_since_contact": 44,
     "status": "overdue",
@@ -170,7 +170,7 @@
   {
     "id": 15,
     "name": "Mason Taylor",
-    "picture": "/src/assets/image/men/Mason Taylor.jpg",
+    "picture": "/assets/image/men/Mason Taylor.jpg",
     "email": "mason.taylor@example.com",
     "days_since_contact": 59,
     "status": "overdue",
@@ -182,7 +182,7 @@
   {
     "id": 16,
     "name": "Amelia Thomas",
-    "picture": "/src/assets/image/women/Amelia Thomas.jpg",
+    "picture": "/assets/image/women/Amelia Thomas.jpg",
     "email": "amelia.thomas@example.com",
     "days_since_contact": 22,
     "status": "on-track",
@@ -194,7 +194,7 @@
   {
     "id": 17,
     "name": "Logan White",
-    "picture": "/src/assets/image/men/Logan White.jpg",
+    "picture": "/assets/image/men/Logan White.jpg",
     "email": "logan.white@example.com",
     "days_since_contact": 17,
     "status": "on-track",
@@ -206,7 +206,7 @@
   {
     "id": 18,
     "name": "Harper Harris",
-    "picture": "/src/assets/image/women/Harper Harris.jpg",
+    "picture": "/assets/image/women/Harper Harris.jpg",
     "email": "harper.harris@example.com",
     "days_since_contact": 47,
     "status": "overdue",
@@ -218,7 +218,7 @@
   {
     "id": 19,
     "name": "Elijah Martin",
-    "picture": "/src/assets/image/men/Elijah Martin.jpg",
+    "picture": "/assets/image/men/Elijah Martin.jpg",
     "email": "elijah.martin@example.com",
     "days_since_contact": 53,
     "status": "overdue",
@@ -230,7 +230,7 @@
   {
     "id": 20,
     "name": "Abigail Clark",
-    "picture": "/src/assets/image/women/Abigail Clark.jpg",
+    "picture": "/assets/image/women/Abigail Clark.jpg",
     "email": "abigail.clark@example.com",
     "days_since_contact": 29,
     "status": "almost due",
